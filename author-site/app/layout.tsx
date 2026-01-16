@@ -29,18 +29,21 @@ export default function RootLayout({
           <header className="site-header">
             <div className="header-content">
               <div className="brand">
-                <span className="brand-mark">AS</span>
-                <div>
-                  <p className="brand-title">Author Studio</p>
-                  <p className="brand-subtitle">Books, essays, and speaking</p>
-                </div>
+                <a className="brand-mark" href="/">
+                  FC
+                </a>
+                <a className="brand-text" href="/">
+                  <span className="brand-title">Finally Creative</span>
+                  <span className="brand-subtitle">Finally making the time for creativity</span>
+                </a>
               </div>
               <nav className="site-nav" aria-label="Primary">
                 <a href="#about">About</a>
-                <a href="#books">Books</a>
-                <a href="#services">Services</a>
-                <a href="#events">Events</a>
-                <a href="#contact">Contact</a>
+                <a href="/services">Services & Courses</a>
+                {/* <a href="#services">Courses</a> */}
+                <a href="/books">Books</a>
+                <a href="/blog">Blog</a>
+                <a href="#contact">Connect</a>
               </nav>
             </div>
           </header>
@@ -49,7 +52,7 @@ export default function RootLayout({
 
           <footer className="site-footer">
             <div className="footer-content">
-              <p>© 2024 Author Studio. All rights reserved.</p>
+              <p>© 2024 Finally Creative. All rights reserved.</p>
               <div className="footer-links">
                 <a href="#newsletter">Newsletter</a>
                 <a href="#press">Press Kit</a>
