@@ -48,7 +48,9 @@ export default async function CoursePage({
             ) : null}
             {Array.isArray(course.highlights) && course.highlights.length ? (
               <div className="course-highlights">
-                {course.highlights.map((highlight, index) => (
+                {(
+                  course.highlights as Array<{ label?: string; value?: string }>
+                ).map((highlight, index) => (
                   <div key={`${highlight.label}-${index}`}>
                     <p className="highlight-label">{highlight.label}</p>
                     <p className="highlight-value">{highlight.value}</p>
