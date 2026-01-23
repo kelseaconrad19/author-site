@@ -132,12 +132,12 @@ export default async function Home() {
                 <p className="metric-label">Writing + teaching</p>
               </div>
               <div className="metric-card">
-                <p className="metric-value">30 min</p>
-                <p className="metric-label">Weekly sprint plan</p>
+                <p className="metric-value">1:1 support</p>
+                <p className="metric-label">Drafts, revisions, strategy</p>
               </div>
               <div className="metric-card">
-                <p className="metric-value">2x</p>
-                <p className="metric-label">Draft momentum</p>
+                <p className="metric-value">30 min</p>
+                <p className="metric-label">A routine you can keep</p>
               </div>
             </div>
           </div>
@@ -205,17 +205,16 @@ export default async function Home() {
         <div className="services-shell">
           <div className="services-intro">
             <p className="section-kicker">Services + Courses</p>
-            <h2 className="section-title">Support to finish, refine, and publish with confidence.</h2>
+            <h2 className="section-title">Support to finish the draft and find your readers.</h2>
             <p className="section-lede">
-              A mix of hands-on editorial support and self-paced learning. Choose what you need
-              right now, and scale up as your project grows.
+              Editorial help when you want a real human in your corner, and courses when you want a plan you can follow on your own time.
             </p>
           </div>
           <div className="services-panels">
             <div className="services-group">
               <div className="group-header">
-                <h3>Editing services</h3>
-                <p>Tailored feedback that respects your voice.</p>
+                <h3>From Draft to Done Coaching</h3>
+                <p>Get unstuck, get organized, and get pages written.</p>
               </div>
               {services.length === 0 ? (
                 <p className="card-text">Add services in Sanity to populate this list.</p>
@@ -256,8 +255,8 @@ export default async function Home() {
             </div>
             <div className="services-group">
               <div className="group-header">
-                <h3>Courses</h3>
-                <p>Guided learning for busy writers.</p>
+                <h3>Self-Paced Courses</h3>
+                <p>Clear steps, practical templates, and checkpoints—so you actually follow through.</p>
               </div>
               {courses.length === 0 ? (
                 <p className="card-text">Add courses in Sanity to populate this list.</p>

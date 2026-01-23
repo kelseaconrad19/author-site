@@ -101,7 +101,7 @@ export default async function ServicesIndexPage() {
                         <span>Service</span>
                       </div>
                       <h3>{service.title}</h3>
-                      <p>{service.summary}</p>
+                      <p className="entry-summary">{service.summary}</p>
                       {preview ? <p className="entry-detail">{preview}</p> : null}
                       <a className="link-arrow" href={`/services/${service.slug}`}>
                         Learn more
@@ -146,7 +146,7 @@ export default async function ServicesIndexPage() {
                         <span>Course</span>
                       </div>
                       <h3>{course.title}</h3>
-                      <p>{course.summary}</p>
+                      <p className="entry-summary">{course.summary}</p>
                       {preview ? <p className="entry-detail">{preview}</p> : null}
                       {course.syllabus?.length ? (
                         <ul className="entry-list">

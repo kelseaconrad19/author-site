@@ -352,7 +352,7 @@ a {
 }
 
 .section-title {
-  margin: 0 0 12px;
+  margin: 0 0 0px;
   font-size: 1.6rem;
 }
 
@@ -365,7 +365,7 @@ a {
 }
 
 .section-lede {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
   color: var(--sage);
   line-height: 1.6;
 }
@@ -403,15 +403,15 @@ a {
 }
 
 .services-shell {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  gap: 32px;
+  gap: 12px;
   padding: 0 32px;
 }
 
 .services-intro .section-title {
-  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-size: clamp(2rem, 3vw, 2.7rem);
 }
 
 .services-panels {
@@ -432,7 +432,7 @@ a {
 
 .group-header h3 {
   margin: 0 0 6px;
-  font-size: 1.35rem;
+  font-size: 2rem;
 }
 
 .group-header p {
@@ -442,25 +442,25 @@ a {
 
 .service-list {
   display: grid;
-  gap: 20px;
+  gap: 15px;
 }
 
 .service-card {
   display: grid;
   grid-template-columns: 140px 1fr;
   gap: 16px;
-  padding: 12px;
+  padding: 8px;
   border-radius: 16px;
   background: rgba(4, 13, 11, 0.03);
   border: 1px solid rgba(4, 13, 11, 0.06);
-  max-width: 520px;
+  max-width: 600px;
   width: 100%;
   align-items: center;
 }
 
 .service-content {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .service-card h4,
@@ -576,10 +576,21 @@ a {
   color: var(--sage);
 }
 
+.entry-summary {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.entry-summary + .entry-detail {
+  margin-top: 6px;
+}
+
 .entry-detail {
   margin-top: 8px;
   color: var(--ink);
-  font-size: 0.98rem;
+  font-size: 0.88rem;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -654,13 +665,14 @@ a {
 }
 
 .service-card h4 {
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   font-size: 1.05rem;
 }
 
 .service-card p {
-  margin: 0;
+  margin: 0 0 6px;
   color: var(--sage);
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -923,7 +935,7 @@ a {
 
 .service-layout {
   display: grid;
-  gap: 24px;
+  gap: 54px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: start;
 }
@@ -937,6 +949,18 @@ a {
   margin: 0 0 12px;
   color: var(--sage);
   line-height: 1.7;
+}
+
+.service-details ul {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: var(--sage);
+  line-height: 1.7;
+  font-size: inherit;
+}
+
+.service-details li {
+  margin: 0 0 8px;
 }
 
 .service-signup {
